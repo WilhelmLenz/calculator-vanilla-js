@@ -6,11 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
-    integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
-    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
   <title>Modal window</title>
 </head>
 
@@ -22,8 +18,8 @@
 
   </div>
   <table class="outside-border">
-    <tr>
-      <td colspan="4">
+    <tr class="toolbar">
+      <td colspan="4" class="toolbar">
         <a href="">x</a>
         <a href="">-</a>
         <a href="">+</a>
@@ -33,33 +29,33 @@
       <td colspan="4"><input type="text" class="number-input"></td>
     </tr>
     <tr>
-      <td colspan="1">AC</td>
-      <td colspan="1">+/-</td>
-      <td colspan="1">&#37;</td>
-      <td colspan="1">&#247;</td>
+      <td class="operators-horizontal">AC</td>
+      <td class="operators-horizontal">+/-</td>
+      <td class="operators-horizontal">&#37;</td>
+      <td class="operators-vertical">&#247;</td>
     </tr>
     <tr>
       <td>7</td>
       <td>8</td>
       <td>9</td>
-      <td>&#215;</td>
+      <td class="operators-vertical">&#215;</td>
     </tr>
     <tr>
       <td>4</td>
       <td>5</td>
       <td>6</td>
-      <td>&#8722;</td>
+      <td class="operators-vertical">&#8722;</td>
     </tr>
     <tr>
       <td>1</td>
       <td>2</td>
       <td>3</td>
-      <td>&#43;</td>
+      <td class="operators-vertical">&#43;</td>
     </tr>
     <tr>
       <td colspan="2">0</td>
       <td>,</td>
-      <td>&#61;</td>
+      <td class="operators-vertical">&#61;</td>
     </tr>
   </table>
 
