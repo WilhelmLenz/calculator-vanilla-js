@@ -17,13 +17,11 @@ h1, h3 {
 .outside-border {
   border-radius: 3px;
   opacity: 0.7;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .outside-border, tr, td {
-  
   margin: 10rem auto;
-  
 }
 
 td {
@@ -32,5 +30,6 @@ td {
 }
 
 .number-input {
-  background-color: aqua;
+  background-color: rgba(20, 20, 20, 0.8);
+  padding: 20px;
 }
