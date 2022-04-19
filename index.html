@@ -19,30 +19,31 @@
   <div class="calculator-body">
     <h1>This is my first calculator project</h1>
     <h3>Black and White is the new Gold</h3>
-
+    <button id="current-button">Open Calculator</button>
   </div>
+
   <table class="outside-border">
     <tr class="toolbar">
       <td colspan="4" class="toolbar-items">
-        <span class="dot-1 dot"><i class="fa-solid fa-circle-xmark"></i></span>
-        <span class="dot-2 dot"><i class="fa-solid fa-circle-minus"></i></span>
-        <span class="dot-3 dot"><i class="fa-solid fa-circle-plus"></i></span>
+        <span class="dot-1 dot" id="close"><i class="fa-solid fa-circle-xmark"></i></span>
+        <span class="dot-2 dot" id="minimize"><i class="fa-solid fa-circle-minus"></i></span>
+        <span class="dot-3 dot" id="zoom-in"><i class="fa-solid fa-circle-plus"></i></span>
       </td>
     </tr>
     <tr>
       <td colspan="4" class="number-field"><input type="text" class="number-input"></td>
     </tr>
     <tr>
-      <td class="operators-horizontal" id="ac">AC</td>
-      <td class="operators-horizontal" id="change-plus-minus">+/-</td>
+      <td class="operators-horizontal" id="clear">AC</td>
+      <td class="operators-horizontal" id="change-minus-plus">+/-</td>
       <td class="operators-horizontal" id="percent">&#37;</td>
-      <td class="operators-vertical" id="division">&#247;</td>
+      <td class="operators-vertical" id="divide">&#247;</td>
     </tr>
     <tr>
       <td id="seven">7</td>
       <td id="eight">8</td>
       <td id="nine">9</td>
-      <td id="multiplication" class="operators-vertical">&#215;</td>
+      <td id="multiply" class="operators-vertical">&#215;</td>
     </tr>
     <tr>
       <td id="four">4</td>
