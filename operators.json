@@ -1,0 +1,13 @@
+{
+  "operator": [
+    {
+      "plus": "+",
+      "minus": "-",
+      "division": "/",
+      "multiplication": "*",
+      "percent": "1/100",
+      "equal": "="
+    }
+  ]
+}
+
