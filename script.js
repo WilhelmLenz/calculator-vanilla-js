@@ -1,8 +1,11 @@
 'use strict';
 
+var inputArr = [];
+inputArr = document
+
 document.getElementById('close').addEventListener('click', closeCalculator)
-document.getElementById('minimize').addEventListener('click', zoomInCalculator)
-document.getElementById('zoom-in').addEventListener('click', minimizeCalculator)
+document.getElementById('minimize').addEventListener('click', minimizeCalculator)
+document.getElementById('zoom-in').addEventListener('click', zoomInCalculator)
 document.getElementById('clear').addEventListener('click', clear)
 document.getElementById('change-minus-plus').addEventListener('click', changeMinusPlus)
 document.getElementById('percent').addEventListener('click', percent)
@@ -36,15 +39,70 @@ function openCalculator() {
     })
 }
 
+function minimizeCalculator() {
+    document.querySelector(".outside-border").style.visibility = "hidden"
+    document.getElementById('maximize-calc').style.visibility = "visible";
+    maximizeCalculator();
+}
 
+function maximizeCalculator() {
+    document.getElementById('maximize-calc').addEventListener('click', function() {
+        document.querySelector('.outside-border').style.visibility = "visible";
+        document.getElementById('maximize-calc').style.visibility = "hidden";
+    })
+}
 
 function zoomInCalculator() {
-    console.log('Zoom-in');
+    console.log('9');
 }
-function minimizeCalculator() {
-    console.log('minimize');
+
+function clear() {
+    document.querySelector('.number-input').value = '';
 }
+
+
+function changeMinusPlus() {
+    if (document.getElementById('number-input').value !== '0') {
+        console.log('minusPlus');
+    } else {
+        
+    }
+}
+
+function percent() {
+    if (document.getElementById('number-input').value !== '0') {
+        console.log('percent');
+    } else {
+        
+    }
+}
+
+
+
+function divide() {
+    console.log('divide');
+}
+function multiply() {
+    console.log('multiply');
+}
+function plus() {
+    console.log('plus');
+}
+function minus() {
+    console.log('minus');
+}
+function equal() {
+    console.log('equal');
+}
+function comma() {
+    console.log('comma');
+}
+
+
+
 function numberNine() {
+    document.getElementById('number-input').value = '';
+    document.getElementById('number-input').value = document.getElementById('number-input').value + document.getElementById('nine').textContent; 
     console.log('9');
 }
 function numberEight() {
@@ -76,30 +134,4 @@ function numberZero() {
 }
 
 
-function clear() {
-    console.log('clear');
-}
-function changeMinusPlus() {
-    console.log('change minus plus');
-}
-function percent() {
-    console.log('percent');
-}
-function divide() {
-    console.log('divide');
-}
-function multiply() {
-    console.log('multiply');
-}
-function plus() {
-    console.log('plus');
-}
-function minus() {
-    console.log('minus');
-}
-function equal() {
-    console.log('equal');
-}
-function comma() {
-    console.log('comma');
-}
+
